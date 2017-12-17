@@ -1,0 +1,119 @@
+<html>
+
+<head>
+    <title>Sports Collectible Blockchain - Details</title>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css' rel='stylesheet' type='text/css'>
+    <link href='./stylesheets/app.css' rel='stylesheet' type='text/css'>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="./app.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+    <body>
+        <nav class="navbar navbar-custom navbar-fixed-top">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <a style="font-size:25px" class="navbar-brand" href="index.html">Sports Collectible Blockchain</a>
+                </div>
+                <ul class="nav navbar-nav navbar-right">
+                    <li >
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li class="active">
+                        <a href="listCollectible.html">Sell</a>
+                    </li>
+                    <li>
+                        <a href="myCollectibles.html">My Collectibles</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <div class="container-fluid col-sm-12" style="padding-left:2%;margin-top:6%">
+            <div class="col-sm-12" style="padding-left:2%;font-size:25px;color:rgb(243, 49, 65)" id="welMsg">Welcome </div><br><br><br>
+            <div class="row">
+                <div style="display: none;" class="alert alert-success" id="msg"></div>
+                <form class="form-horizontal col-sm-12" id="addCollectible">
+                    <div class="form-group">
+                        <label for="collectibleName" class="coll-heading col-sm-3 control-label">Name</label>
+                        <div class="col-sm-5">
+                            <input type="text" name="collectibleName" class="form-control" id="collectibleName" required="required"></input>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="price" class="coll-heading col-sm-3 control-label">Price</label>
+                        <div class="col-sm-5">
+                            <input type="text" name="price" class="form-control" id="price" placeholder="Enter price in Ether" required="required"></input>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="desc" class="coll-heading col-sm-3 control-label">Description</label>
+                        <div class="col-sm-5">
+                            <textarea class="form-control" name="desc" rows="8" id="desc" placeholder="Enter detailed description"
+                                required="required"></textarea>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="certNum" class="coll-heading col-sm-3 control-label pull-left">Certification Number</label>
+                        <div class="col-sm-5">
+                            <input type="text" name="certNum" class="form-control" id="certNum" required="required"></input>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="rating" class="coll-heading col-sm-3 control-label">PS Rating</label>
+                        <div class="col-sm-5">
+                            <input type="text" name="rating" class="form-control" id="rating" required="required"></input>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="collectibleImg" class="col-sm-3 coll-heading control-label">Upload photo</label>
+                        <div class="col-sm-5">
+                            <input type="file" name="collectibleImg" class="form-control" id="collectibleImg" required="required">
+                        </div>
+                    </div>
+                    <!-- <div class="form-group">
+                        <label for="product-category" class="col-sm-2 control-label">Category</label>
+                        <div class="col-sm-10">
+                            <select class="form-control" name="product-category" id="product-category">
+                                <option>Art</option>
+                                <option>Books</option>
+                                <option>Cameras</option>
+                                <option>Cell Phones & Accessories</option>
+                                <option>Clothing</option>
+                                <option>Coins & Paper Money</option>
+                                <option>Collectibles</option>
+                                <option>Computers/Tablets & Networking</option>
+                                <option>Consumer Electronics</option>
+                                <option>Crafts</option>
+                                <option>DVDs & Movies</option>
+                                <option>Entertainment Memorabilia</option>
+                                <option>Gift Cards & Coupons</option>
+                                <option>Music</option>
+                                <option>Musical Instruments & Gear</option>
+                                <option>Pet Supplies</option>
+                                <option>Pottery & Glass</option>
+                                <option>Sporting Goods</option>
+                                <option>Stamps</option>
+                                <option>Tickets</option>
+                                <option>Toys & Hobbies</option>
+                                <option>Video Games</option>
+                            </select>
+                        </div>
+                    </div> -->
+                    <!-- <div class="form-group">
+                        <label for="product-price" class="col-sm-2 control-label">Auction Start Time</label>
+                        <div class="col-sm-10">
+                            <input type="datetime-local" class="form-control" name="product-auction-start" id="product-auction-start" required="required"></input>
+                        </div>
+                    </div> -->
+                    <div class="form-group">
+                        <div class="col-sm-offset-3 col-sm-12">
+                            <button type="submit" class="btn btn-success btn-xl">Add collectible</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+    </body>
+</html>

@@ -1,0 +1,134 @@
+body {
+  /* margin-left: 25%;
+  margin-right: 25%;
+  margin-top: 10%; */
+  font-family: "Open Sans", sans-serif;
+}
+
+label {
+  display: inline-block;
+  width: 100px;
+}
+
+input {
+  width: 500px;
+  padding: 5px;
+  font-size: 16px;
+}
+
+button {
+  font-size: 16px;
+  padding: 5px;
+}
+
+.top-padding {
+  margin-top:60px;
+}
+
+.coll-heading {
+  padding-left: 5%;
+  font-size: 18px;
+  font-weight: bold;
+  /*color: #870A0C; */
+}
+
+.coll-detail-heading {
+  padding-left: 5%;
+  font-size: 30px;
+ /* font-weight: bold;
+  /*color: #870A0C; */
+}
+
+.coll-sub{
+  padding-left: 5%;
+  font-size: 18px;
+  color: rgb(214, 22, 22)
+}
+
+.navbar-custom {
+background-color: #4d0505;
+    color:#ffffff;
+  	border-radius:0;
+}
+  
+.navbar-custom .navbar-nav > li > a {
+  	color:#fff;
+  	padding-left:20px;
+  	padding-right:20px;
+}
+.navbar-custom .navbar-nav > .active > a, .navbar-nav > .active > a:hover, .navbar-nav > .active > a:focus {
+  background-color: #e73c30
+}
+
+.navbar-custom .navbar-nav > li > a:hover, .nav > li > a:focus, .navbar-custom .navbar-nav .open>a  { 
+  background-color: #e73c30
+}
+
+     
+/* dropdown */
+.navbar-custom .navbar-nav .dropdown-menu  { 
+  background-color: #2c0202;
+}
+.navbar-custom .navbar-nav .dropdown-menu>li>a  { 
+  color: #fff;
+}
+.navbar-custom .navbar-nav .dropdown-menu>li>a:hover,.navbar-custom .navbar-nav .dropdown-menu>li>a:focus  { 
+  background-color: #2c0202;
+}
+      
+.navbar-custom .navbar-brand {
+  	color:#eeeeee;
+}
+.navbar-custom .navbar-toggle {
+  	background-color:#eeeeee;
+}
+.navbar-custom .icon-bar {
+  	background-color: #2c0202;
+}
+.btn-xl {
+    padding: 10px 20px;
+    font-size: 20px;
+    border-radius: 10px;
+}
+
+.btn-med {
+    padding: 8px 18px;
+    font-size: 18px;
+    border-radius: 10px;
+}
+
+/* h1, h2 {
+  display: inline-block;
+  vertical-align: middle;
+  margin-top: 0px;
+  margin-bottom: 10px;
+}
+
+h2 {
+  color: #AAA;
+  font-size: 32px;
+}
+
+h3 {
+  font-weight: normal;
+  color: #AAA; 
+  font-size: 24px;
+} */
+/* 
+h4 {
+  font-weight: normal;
+  color: #AAA; 
+  font-size: 18px;
+} */
+
+.black {
+  color: black;
+}
+
+#balance {
+  color: black;
+}
+
+.hint {
+  color: #666;
+}

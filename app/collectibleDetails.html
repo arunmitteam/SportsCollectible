@@ -1,0 +1,101 @@
+<html>
+
+<head>
+    <title>Sports Collectible Blockchain - Details</title>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css' rel='stylesheet' type='text/css'>
+    <link href='./stylesheets/app.css' rel='stylesheet' type='text/css'>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="./app.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+    <nav class="navbar navbar-custom navbar-fixed-top">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a style="font-size:25px" class="navbar-brand" href="index.html">Sports Collectible Blockchain</a>
+            </div>
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+                <li>
+                    <a href="listCollectible.html">Sell</a>
+                </li>
+                <li>
+                    <a href="myCollectibles.html">My Collectibles</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container-fluid col-sm-12" style="padding-left:2%;margin-top:6%">
+        <div class="row" id="collectible-details">
+            <div class="col-sm-12" style="padding-left:3%;font-size:25px;color:rgb(243, 49, 65)" id="welMsg">Welcome </div><br><br><br>
+            <div style="display: none;" class="alert alert-success" id="msg"></div>
+            <div style="display: none;" class="alert alert-danger" id="msgFail"></div>
+            <div class="col-md-5" id="image"></div>
+            <div class="col-md-7">
+                <div class="row coll-detail-heading" id="name"></div><br><br>
+                <div class = "row coll-heading">Price</div>
+                <div class="row coll-sub" id="price"></div> <br>
+                <div class="row coll-heading">Description</div>
+                <div class="row coll-sub" id="desc"></div><br>
+                <div class="row coll-heading">Certification Number</div>
+                <div class="row coll-sub" id="certNum"></div>
+                <br>
+                <div class="row coll-heading">PS Rating</div>
+                <div class="row coll-sub" id="rating"></div>
+                <br>
+                <div class="row coll-heading">Current Owner</div>
+                <div class="row coll-sub" id="owner"></div><br>
+                <div class="row coll-heading">Current Market Status</div>
+                <div class="row coll-sub" id="status"></div><br>
+                <div class="row coll-heading">Buyer</div>
+                <div class="row coll-sub" id="buyer"></div>
+                <br>
+                <div class="row">
+                    <div class="col-md-12">
+                    <form id="buy" class="col-md-1" style="padding-left:3%">
+                        <div class="form-group">
+                            <input type="hidden" name="collId" id="collId" />
+                            <input type="hidden" name="collPrice" id="collPrice" />
+                            <button type="submit" class="btn btn-success btn-xl">Buy</button><br>
+                        </div>
+                    </form>
+                    <form id="sell" class="col-md-1" style="padding-left:3%">
+                        <div class="form-group">
+                            <input type="hidden" name="collId" id="collId" />                            
+                            <button type="submit" class="btn btn-success btn-xl">Sell</button>                           
+                        </div>
+                        <br>
+                    </form>
+                    <form id="confirm"  class="col-md-5"  style="padding-left:3%">
+                        <div class="form-group">
+                            <input type="hidden" name="collId" id="collId" />                        
+                            <button type="confirm" class="btn btn-success btn-xl">Confirm Delivery</button>
+                        </div>
+                    </form>
+                    <form id="not" class="col-md-5"  style="padding-left:3%">
+                        <div class="form-group">
+                            <input type="hidden" name="collId" id="collId" />
+                            <button type="not" class="btn btn-danger btn-xl">Not Delivered</button>
+                        </div>
+                        <br>
+                    </form>
+                    </div>
+                </div>
+                <div class="row coll-heading">Owner History</div>
+                <div class="row coll-sub" id="prevOwners"></div>
+                <br>
+                <div class="row coll-heading">Transaction History</div>
+                <div class="row coll-sub" id="prevOwners"></div>
+                <br>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+
+</html>
